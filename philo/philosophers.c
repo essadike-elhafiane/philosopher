@@ -6,7 +6,7 @@
 /*   By: eelhafia <eelhafia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/10 23:04:24 by eelhafia          #+#    #+#             */
-/*   Updated: 2023/04/04 15:14:53 by eelhafia         ###   ########.fr       */
+/*   Updated: 2023/04/06 19:50:13 by eelhafia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,7 +123,7 @@ int	main(int ac, char **av)
 
 	i = 0;
 	if (ac < 5 || ac > 6)
-		return (write(1, "Error arg !\n", 12), 0);
+		return (write(1, "Error arg !\n", 12), 1);
 	if (ft_check_error(av))
 		return (write(1, "Error not number or num negative \n", 35), 1);
 	pthread_mutex_init(&print, NULL);
